@@ -2,7 +2,7 @@
 def valid_move?(board, index)
   if position_taken?(board, index)
     puts "Please select an unoccupied square."
-  elsif index != between?(0, 8)
+  elsif index != between?(0,8)
     puts "Please select a valid square on the board."
   else
     puts "Great move!"
