@@ -1,13 +1,9 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  if position_taken?(board, index)
-    puts "Please select an unoccupied square."
-  elsif index != be_between(0,8)
-    puts "Please select a valid square on the board."
-  elsif index == be_between(0,8)
-    puts "Great move!"
+  if position_taken?(board, index) || index != be_between(0,8)
+    puts "Please select a valid, unoccupied square."
   else
-    puts "Sorry, please try again!"
+    puts "Great move!"
   end
 end
 
